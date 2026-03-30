@@ -1,6 +1,5 @@
 name: Multi-Triggres
-
- on:
+on:
   push:
     branches: [main]
   schedule:
