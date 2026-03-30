@@ -1,0 +1,21 @@
+name: Multi-Triggres
+
+ on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    schedule:
+      - cron:'1 * * * *'
+ jobs:
+  Multi-Triggres:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create a file
+        run: echo 'Hello.txt'
+
+      - name: List the Hidden Files
+        run: ls -a
+
+      - name: disk space 
+        run: df     
