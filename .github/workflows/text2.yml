@@ -1,4 +1,4 @@
-name: Multi-Triggres
+name: cron
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
   schedule:
       - cron:'1 * * * *'
 
-  jobs:
-    Multi-Triggres:
+jobs:
+    cron:
     runs-on: ubuntu-latest
     steps:
       - name: create a file
