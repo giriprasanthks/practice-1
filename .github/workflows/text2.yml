@@ -3,9 +3,7 @@ name: Multi-Triggres
  on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
-    schedule:
+  schedule:
       - cron:'1 * * * *'
  jobs:
   Multi-Triggres:
